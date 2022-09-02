@@ -17,7 +17,7 @@ module.exports = async function(deployer) {
   const dex = await Dex.deployed();
 
   // transfer all the tokens to the deployed dex
-  await dai.transfer(dex.address, 10**10);
-  await link.transfer(dex.address, 10**6);
-  await comp.transfer(dex.address, 10**4);
+  await dai.transfer(dex.address, toWei(10**10));
+  await link.transfer(dex.address, toWei(10**6));
+  await comp.transfer(dex.address, toWei(10**4));
 }
