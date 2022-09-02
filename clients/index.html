@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ERC20 Swap</title>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arvo&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/style.css" />
+</head>
+<body>
+    <header>
+        <h1>ERC20 Swap</h1>
+        <div id="user-profile">
+            <button type="button" class="btn btn-warning btn-lg login">
+                Connect Wallet
+            </button>
+        </div>
+    </header>
+    
+    <div id="swap-interface">
+        <form id="swap-box">
+            <div class="input-group top">
+                <input 
+                    type="number"
+                    class="form-control"
+                    id="input"
+                    aria-describedby="eth-addon"
+                    placeholder="0.00"
+                    autoComplete="off"
+                    autoCorrect="off"
+                    required    
+                >
+                <span class="input-group-text" id="eth-addon">
+                    <img src="assets/images/eth.png" />&nbsp;ETH
+                </span>
+            </div>
+            <div id="arrow-box">
+                <h2>↓</h2>
+            </div>
+            <div class="input-group bottom">
+                <input 
+                    type="number"
+                    class="form-control"
+                    id="output"
+                    placeholder="0.00"
+                    disabled
+                    aria-label="Text input with dropdown button"
+                    aria-describedby="eth-addon"
+                >
+                <button
+                    class="btn btn-outline-secondary selectToken"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                >
+                    Select <br> Token
+                </button>
+                <ul class="dropdown-menu w-30">
+                    <li>
+                        <a class="dropdown-item">
+                            <img src="assets/images/comp.png" />&nbsp;COMP
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item">
+                            <img src="assets/images/link.png" />&nbsp;LINK
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item">
+                            <img src="assets/images/dai.png" />&nbsp;DAI
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div id="rate-box">
+                <span class="rate text">Exchange Rate</span>
+                <span class="rate value">
+                    1 <span id="top-text">ETH</span> = <span id="rate-value">3000</span><span id="bottom-text"> DAI</span>
+                </span>
+            </div>
+            <button type="submit" class="btn btn-primary swap disabled">
+                Connect Wallet
+            </button>
+        </form>
+    </div>
+
+    <footer>
+        <span id="creator">ブロック アカデミー</span>
+        <span id="username">0x123456</span>
+    </footer>
+</body>
+<script src="./assets/app.js"></script>
+<script src="./assets/component.js"></script>
+</html>

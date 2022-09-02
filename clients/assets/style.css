@@ -1,0 +1,182 @@
+body {
+    background-color: #2d222e;
+    position: relative;
+    color: #fff;
+  }
+  
+  header {
+    background-color: #191b1f;
+    height: 80px;
+    width: 100%;
+    position: relative;
+  }
+  
+  header h1 {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    margin-left: 30px;
+    font-family: 'Arvo', serif;
+  }
+  
+  #user-profile {
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    transform: translate(0, -50%);
+    margin-right: 30px;
+  }
+  
+  #swap-interface {
+    margin: 0 auto;
+    margin-top: 150px;
+    border-radius: 50px;
+    height: 350px;
+    width: 500px;
+    background-color: #191b1f;
+    position: relative;
+  }
+  
+  #swap-box {
+    position: absolute;
+    top: 30px;
+    width: 100%;
+  }
+  
+  .input-group {
+    width: 90%;
+    margin: 0px auto;
+  }
+  
+  .form-control {
+    background-color: #212429;
+    border-color: #2C2F36;
+    border-width: 2px;
+    height: 70px;
+    border-radius: 15px;
+    font-size: x-large;
+  }
+  
+  .input-group-text {
+    background-color: #191B1F;
+    border-color: #2C2F36;
+    color: #fff;
+    width: 27%;
+    font-size: large;
+  }
+  
+  #eth-addon img{
+    margin-left: 10px;
+  }
+  
+  img {
+    width: 30px;
+    height: 30px;
+    margin-left: -5px;
+  }
+  
+  .input-group .btn {
+    width: 27%;
+    border-color: #2C2F36;
+  }
+  
+  .input-group #input {
+    background-color: #212429; color: #fff
+  }
+  
+  .input-group #output {
+    background-color: #212429; color: #fff
+  }
+  
+  .input-group #output:hover {
+    cursor: not-allowed;
+  }
+  
+  .dropdown-menu li:hover {
+    cursor: pointer;
+  }
+  
+  #arrow-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  #arrow-box h2{
+    margin: 2px 0px; 
+  }
+  
+  #arrow-box h2:hover{
+    cursor: pointer;
+  }
+  
+  #rate-box {
+    width: 100%;
+    height: 20px;
+    margin-top: 20px;
+  }
+  
+  #rate-box .rate{
+    color: #788089;
+  }
+  
+  #rate-box .rate.text {
+    padding-left: 30px;
+    float: left;
+  }
+  
+  #rate-box .rate.value {
+    padding-right: 30px;
+    float: right;
+    display: block;
+  }
+  
+  
+  #swap-box .btn.swap {
+    position: absolute;
+    width: 90%;
+    height: 50px;
+    background-color: #172A42;
+    color: #6DA8FF;
+    margin: 0px auto;
+    bottom: -75px;
+    left: 50%;
+    margin-left: -45%;
+    border-radius: 15px;
+  }
+  
+  footer {
+    clear: both;
+    padding: 0;
+    vertical-align: middle;
+    line-height: normal;
+    margin: 0;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    color: #b7b7b7;
+    opacity: 0.5;
+    padding-bottom: 15px;
+  }
+  
+  footer #creator {
+    float: left;
+    padding-left: 20px;
+  }
+  
+  footer #username {
+    float: right;
+    padding-right: 20px;
+  }
+  
+  
+  
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
